@@ -19,7 +19,9 @@ struct ContentView: View {
                     .frame(width: 70, height: 70)
                 
                 ZStack {
-                    Text("Hello Swift!")
+                    SignUp(index: self.$index)
+                        .zIndex(Double(self.index))
+                    Login(index: self.$index)
                 }
                 
                 HStack(spacing: 15) {

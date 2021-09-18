@@ -71,7 +71,7 @@ struct ContentView: View {
                 }
                 .padding(.top, 30)
             }
-            .padding(.vertical, 300)
+            .padding(.vertical, 100)
         }
         .background(Color("Color1")).edgesIgnoringSafeArea(.all)
         .preferredColorScheme(.dark)
@@ -237,7 +237,7 @@ struct SignUp: View {
                 VStack{
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color2"))
+                            .foregroundColor(Color("Color"))
                         SecureField("Password", text: $pass)
                     }
                     Divider()
@@ -248,7 +248,7 @@ struct SignUp: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color2"))
+                            .foregroundColor(Color("Color"))
                         SecureField("Password", text: $repass)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -257,7 +257,7 @@ struct SignUp: View {
             }
             .padding()
             .padding(.bottom, 65)
-            .background(Color("Color2"))
+            .background(Color("Color"))
             .clipShape(CShapeNew())
             .contentShape(CShapeNew())
             .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: -5)
@@ -274,8 +274,10 @@ struct SignUp: View {
                     .fontWeight(.bold)
                     .padding(.vertical)
                     .padding(.horizontal, 50)
+                    .background(Color("Color2"))
                     .clipShape(Capsule())
                     .shadow(color: .white.opacity(0.1), radius: 5, x: 0, y: -5)
+    
             }
             .offset(y: 25)
             .opacity(self.index == 1 ? 1 : 0)

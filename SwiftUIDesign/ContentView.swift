@@ -219,6 +219,19 @@ struct SignUp: View {
                 }
                 .padding(.top, 30)
                 
+                VStack {
+                    HStack(spacing: 15) {
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(Color("Color"))
+                        TextField("Email Address", text: self.$email)
+                    }
+                    Divider()
+                        .background(Color.white.opacity(0.5))
+                    
+                }
+                .padding(.horizontal)
+                .padding(.top, 40)
+                
                 VStack{
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")

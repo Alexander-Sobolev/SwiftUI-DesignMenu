@@ -132,7 +132,7 @@ struct Login: View {
                 
                 VStack {
                     HStack(spacing: 15) {
-                        Image(systemName: "envelop.fill")
+                        Image(systemName: "envelope.fill")
                             .foregroundColor(Color("Color1"))
                         TextField("Email Address", text: self.$email)
                     }
@@ -174,7 +174,7 @@ struct Login: View {
             .onTapGesture {
                 self.index = 0
             }
-            .cornerRadius(30)
+            .cornerRadius(35)
             .padding(.horizontal, 20)
             
             Button(action: {
@@ -185,9 +185,9 @@ struct Login: View {
                     .fontWeight(.bold)
                     .padding(.vertical)
                     .padding(.horizontal, 50)
-                    .background(Color("Color"))
+                    .background(Color("Color2"))
                     .clipShape(Capsule())
-                    .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: -5)
+                    .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
             }
             
             .offset(y: 35)
@@ -207,7 +207,6 @@ struct SignUp: View {
             VStack {
                 HStack {
                     Spacer(minLength: 0)
-                    
                     VStack(spacing: 10) {
                         Text("SignUp")
                             .foregroundColor(self.index == 1 ? .white : .gray)
@@ -218,13 +217,15 @@ struct SignUp: View {
                             .fill(self.index == 1 ? Color.blue : Color.clear)
                             .frame(width: 100, height: 5)
                     }
+                    
                 }
                 .padding(.top, 30)
+                
                 
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "envelope.fill")
-                            .foregroundColor(Color("Color"))
+                            .foregroundColor(Color("Color1"))
                         TextField("Email Address", text: self.$email)
                     }
                     Divider()
@@ -237,8 +238,8 @@ struct SignUp: View {
                 VStack{
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color"))
-                        SecureField("Password", text: $pass)
+                            .foregroundColor(Color("Color1"))
+                        SecureField("Password", text: self.$pass)
                     }
                     Divider()
                         .background(Color.white.opacity(0.5))
@@ -248,7 +249,7 @@ struct SignUp: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color"))
+                            .foregroundColor(Color("Color1"))
                         SecureField("Password", text: $repass)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -260,11 +261,12 @@ struct SignUp: View {
             .background(Color("Color"))
             .clipShape(CShapeNew())
             .contentShape(CShapeNew())
-            .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: -5)
+            .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: -5)
             .onTapGesture {
                 self.index = 1
             }
             .cornerRadius(35)
+            .padding(.horizontal, 20)
             
             Button( action: {
                 //

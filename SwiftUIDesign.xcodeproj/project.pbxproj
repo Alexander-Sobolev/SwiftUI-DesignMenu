@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4D8ED3126F8E0B300BDBFE7 /* Screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D8ED3026F8E0B300BDBFE7 /* Screen2.png */; };
 		B4DEE6E026F4B0AB004CBEA1 /* SwiftUIDesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEE6DF26F4B0AB004CBEA1 /* SwiftUIDesignApp.swift */; };
 		B4DEE6E226F4B0AB004CBEA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEE6E126F4B0AB004CBEA1 /* ContentView.swift */; };
 		B4DEE6E426F4B0AC004CBEA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DEE6E326F4B0AC004CBEA1 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4D8ED3026F8E0B300BDBFE7 /* Screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen2.png; sourceTree = "<group>"; };
 		B4DEE6DC26F4B0AB004CBEA1 /* SwiftUIDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DEE6DF26F4B0AB004CBEA1 /* SwiftUIDesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignApp.swift; sourceTree = "<group>"; };
 		B4DEE6E126F4B0AB004CBEA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				B4DEE6E126F4B0AB004CBEA1 /* ContentView.swift */,
 				B4DEE6E326F4B0AC004CBEA1 /* Assets.xcassets */,
 				B4FB47CF26F7CCDD004B5239 /* Screen.png */,
+				B4D8ED3026F8E0B300BDBFE7 /* Screen2.png */,
 				B4DEE6E826F4B0AC004CBEA1 /* Info.plist */,
 				B4DEE6E526F4B0AC004CBEA1 /* Preview Content */,
 			);
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D8ED3126F8E0B300BDBFE7 /* Screen2.png in Resources */,
 				B4DEE6E726F4B0AC004CBEA1 /* Preview Assets.xcassets in Resources */,
 				B4DEE6E426F4B0AC004CBEA1 /* Assets.xcassets in Resources */,
 				B4FB47D026F7CCDD004B5239 /* Screen.png in Resources */,

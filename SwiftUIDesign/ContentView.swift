@@ -196,7 +196,7 @@ struct Login: View {
     }
 }
 
-struct SignUp: View {
+struct SignUp: View {         
     @State var email = ""
     @State var pass = ""
     @State var repass = ""
